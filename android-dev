@@ -8,4 +8,4 @@ alias adbsc="adb shell screencap -p /sdcard/screencap.png && adb pull /sdcard/sc
 alias adbscr="adb shell screenrecord  /sdcard/adb-recording.mp4"
 
 # pulling over to cwd as adb-recording.mp4
-alias adbscrp="adb pull /sdcard/adb-recording.mp4"
+alias adbscrp="adb pull /sdcard/adb-recording.mp4 && adb shell rm /sdcard/adb-recording.mp4"
