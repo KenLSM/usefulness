@@ -2,7 +2,7 @@ alias adbr="adb reverse adb reverse tcp:8081 tcp:8081"
 
 # captures what your attached android screen is displaying
 # then pull it over to your cwd as screencap.png
-alias adbsc="adb shell screencap -p /sdcard/screencap.png && adb pull /sdcard/screencap.png"
+alias adbsc="adb shell screencap -p /sdcard/screencap.png && adb pull /sdcard/screencap.png && adb shell rm /sdcard/screencap.png"
 
 # screen recording
 alias adbscr="adb shell screenrecord  /sdcard/adb-recording.mp4"
